@@ -1,4 +1,5 @@
-= form_for :article, url: articles_path do |f|
+h1 Editing article
+= form_for :article, url: article_path(@article), method: :patch do |f|
   - if @article.errors.any?
     #error_explanation
       h2
